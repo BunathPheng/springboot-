@@ -17,7 +17,7 @@ pipeline {
             steps {
                 echo "=== Checking out source code ==="
                 git branch: 'main',
-                    url: 'https://github.com/13th-generation-devOps/springboot',
+                    url: 'https://github.com/BunathPheng/springboot-.git',
                     credentialsId: 'git-credentials'
             }
         }
