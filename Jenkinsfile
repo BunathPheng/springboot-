@@ -78,7 +78,7 @@ pipeline {
                     sshagent(['staging-server-key']) {
                         sh """
                             echo "Connecting to staging server..."
-                            ssh -o StrictHostKeyChecking=no ubuntu@your-staging-server '
+                            ssh -o StrictHostKeyChecking=no ubuntu@staging-server-key'
                                 echo "Pulling latest Docker image..."
                                 docker pull ${DOCKER_HUB_REPO}:${DOCKER_IMAGE_TAG}
 
