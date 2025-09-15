@@ -5,6 +5,8 @@ pipeline {
         DOCKER_HUB_REPO = 'phengbunath/spring-app'
         DOCKER_IMAGE_TAG = "${BUILD_NUMBER}"
         MAVEN_OPTS = '-Dmaven.repo.local=.m2/repository'
+        JAVA_HOME = '/usr/lib/jvm/java-17-openjdk-amd64/bin/java'  // adjust path if different
+        PATH = "${JAVA_HOME}/bin:${env.PATH}"
     }
 
     tools {
