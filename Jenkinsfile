@@ -75,32 +75,31 @@ pipeline {
             steps {
                 echo "=== Deploying to Staging Environment ==="
                 script {
-                    sshagent(['staging-server-key']) {
-                        sh """
-                            echo "Connecting to staging server..."
-                            ssh -o StrictHostKeyChecking=no ubuntu@staging-server-key'
-                                echo "Pulling latest Docker image..."
-                                docker pull ${DOCKER_HUB_REPO}:${DOCKER_IMAGE_TAG}
+                sshagent(['staging-server-key']) {
+                    sh """
+                        ssh -o StrictHostKeyChecking=no ubuntu@${STAGING_SERVER} '
+                            echo "Pulling latest Docker image..."
+                            docker pull ${DOCKER_HUB_REPO}:${DOCKER_IMAGE_TAG}
 
-                                echo "Stopping existing container..."
-                                docker stop spring-boot-staging || true
-                                docker rm spring-boot-staging || true
+                            echo "Stopping existing container..."
+                            docker stop spring-boot-staging || true
+                            docker rm spring-boot-staging || true
 
-                                echo "Starting new container..."
-                                docker run -d --name spring-boot-staging -p 8080:8080 \
-                                    --restart unless-stopped \
-                                    ${DOCKER_HUB_REPO}:${DOCKER_IMAGE_TAG}
+                            echo "Starting new container..."
+                            docker run -d --name spring-boot-staging -p 8080:8080 \
+                                --restart unless-stopped \
+                                ${DOCKER_HUB_REPO}:${DOCKER_IMAGE_TAG}
 
-                                echo "Waiting for application to start..."
-                                sleep 30
+                            echo "Waiting for application to start..."
+                            sleep 30
 
-                                echo "Health check..."
-                                curl -f http://localhost:8080/actuator/health || exit 1
+                            echo "Health check..."
+                            curl -f http://localhost:8080/actuator/health || exit 1
 
-                                echo "Deployment to staging completed successfully!"
-                            '
-                        """
-                    }
+                            echo "Deployment to staging completed successfully!"
+                        '
+                    """
+                }
                 }
             }
         }
