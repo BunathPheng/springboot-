@@ -52,4 +52,8 @@ public class UserController {
     public String getString() {
         return "This API is working!";
     }
+    @GetMapping("/hello")
+    public String getString() {
+        return "hello This API is working !";
+    }
 }
