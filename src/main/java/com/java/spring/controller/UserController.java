@@ -53,7 +53,11 @@ public class UserController {
         return "This API is working!";
     }
     @GetMapping("/hello")
-    public String getString() {
+    public String getStringd() {
+        return "hello This API is working !";
+    }
+    @GetMapping("/g")
+    public String getStringl() {
         return "hello This API is working !";
     }
 }
