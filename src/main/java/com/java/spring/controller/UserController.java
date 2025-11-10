@@ -64,4 +64,8 @@ public class UserController {
     public String getStringles() {
         return "hello This API is working !";
     }
+    @GetMapping("/gess")
+    public String getStringless() {
+        return "hello This API is working !";
+    }
 }
