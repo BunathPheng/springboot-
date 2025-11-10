@@ -64,24 +64,4 @@ public class UserController {
     public String getStringles() {
         return "hello This API is working !";
     }
-    @GetMapping("/gess")
-    public String getStringless() {
-        return "hello This API is working !";
-    }
-    @GetMapping("/gesss")
-    public String getStringlessz() {
-        return "hello This API is working !";
-    }
-    @GetMapping("/gessss")
-    public String getStringlessza() {
-        return "hello This API is working !";
-    }
-    @GetMapping("/gesssse")
-    public String getStringlesszae() {
-        return "hello This API is working !";
-    }
-    @GetMapping("/k")
-    public String getStringlesszaek() {
-        return "hello This API is working !";
-    }
 }
