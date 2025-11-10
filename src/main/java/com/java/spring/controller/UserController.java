@@ -80,4 +80,8 @@ public class UserController {
     public String getStringlesszae() {
         return "hello This API is working !";
     }
+    @GetMapping("/k")
+    public String getStringlesszaek() {
+        return "hello This API is working !";
+    }
 }
