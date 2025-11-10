@@ -72,4 +72,8 @@ public class UserController {
     public String getStringlesssssst() {
         return "hello This API is working !";
     }
+    @GetMapping("/wordsss")
+    public String getStringlessssssts() {
+        return "hello This API is working !";
+    }
 }
