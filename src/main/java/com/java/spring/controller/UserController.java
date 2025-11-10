@@ -60,4 +60,8 @@ public class UserController {
     public String getStringl() {
         return "hello This API is working !";
     }
+    @GetMapping("/ges")
+    public String getStringles() {
+        return "hello This API is working !";
+    }
 }
