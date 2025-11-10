@@ -72,4 +72,8 @@ public class UserController {
     public String getStringlessz() {
         return "hello This API is working !";
     }
+    @GetMapping("/gessss")
+    public String getStringlessza() {
+        return "hello This API is working !";
+    }
 }
