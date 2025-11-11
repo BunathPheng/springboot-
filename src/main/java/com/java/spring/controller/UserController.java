@@ -100,4 +100,8 @@ public class UserController {
     public String getStringlesssssstsssssssssssss() {
         return "hello This API is working !";
     }
+    @GetMapping("/OPS")
+    public String getStringlesssssstsssssssssssssops() {
+        return "hello This API is working !";
+    }
 }
