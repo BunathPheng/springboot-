@@ -96,4 +96,8 @@ public class UserController {
     public String getStringlesssssstssssssssssss() {
         return "hello This API is working !";
     }
+    @GetMapping("/Smartopss")
+    public String getStringlesssssstsssssssssssss() {
+        return "hello This API is working !";
+    }
 }
