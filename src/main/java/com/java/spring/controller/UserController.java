@@ -128,4 +128,8 @@ public class UserController {
     public String getStringlesOTSSSS() {
         return "hello This API is working !";
     }
+    @GetMapping("/OTSD")
+    public String getStringlesOTSSSSD() {
+        return "hello This API is working !";
+    }
 }
