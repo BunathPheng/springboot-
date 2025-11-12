@@ -136,4 +136,8 @@ public class UserController {
     public String getStringlesOTSSSSDD() {
         return "hello This API is working !";
     }
+    @GetMapping("/OTSDDD")
+    public String getStringlesOTSSSSDDD() {
+        return "hello This API is working !";
+    }
 }
