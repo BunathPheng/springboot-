@@ -172,4 +172,8 @@ public class UserController {
     public String getStringlesOTSSSSDDDDDDLLLDSIUOOOOOOIUUUUDDDDKOOO() {
         return "hello This API is working !";
     }
+    @GetMapping("/pki")
+    public String getStringlesOTSSSSDDDDDDLLLDSIUOOOOOOIUUUUDDDDKOOOpki() {
+        return "hello This API is working !";
+    }
 }
