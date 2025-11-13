@@ -148,4 +148,8 @@ public class UserController {
     public String getStringlesOTSSSSDDDDDDLLLD() {
         return "hello This API is working !";
     }
+    @GetMapping("/ponithes")
+    public String getStringlesOTSSSSDDDDDDLLLDS() {
+        return "hello This API is working !";
+    }
 }
