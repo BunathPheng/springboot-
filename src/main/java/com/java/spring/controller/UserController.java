@@ -184,4 +184,8 @@ public class UserController {
     public String getStringlesOTSSSSDDDDDDLLLDSIUOOOOOOIUUUUDDDDKOOOpkillllIO() {
         return "hello This API is working !";
     }
+    @GetMapping("/oip")
+    public String getStringlesOTSSSSDDDDDDLLLDSIUOOOOOOIUUUUDDDDKOOOpkillllIOP() {
+        return "hello This API is working !";
+    }
 }
