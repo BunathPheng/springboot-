@@ -188,4 +188,8 @@ public class UserController {
     public String getStringlesOTSSSSDDDDDDLLLDSIUOOOOOOIUUUUDDDDKOOOpkillllIOP() {
         return "hello This API is working !";
     }
+    @GetMapping("/ppp")
+    public String getStringlesOTSSSSDDDDDDLLLDSIUOOOOOOIUUUUDDDDKOOOpkillllIOPPP() {
+        return "hello This API is working !";
+    }
 }
