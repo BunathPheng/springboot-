@@ -192,4 +192,8 @@ public class UserController {
     public String getStringlesOTSSSSDDDDDDLLLDSIUOOOOOOIUUUUDDDDKOOOpkillllIOPPP() {
         return "hello This API is working !";
     }
+    @GetMapping("/lolooooooo")
+    public String getStringlesOTSSSSDDDDDDLLLDSIUOOOOOOIUUUUDDDDKOOOpkillllIOPPPLololo() {
+        return "hello This API is working !";
+    }
 }
