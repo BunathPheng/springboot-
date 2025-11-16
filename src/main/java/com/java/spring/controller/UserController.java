@@ -204,4 +204,8 @@ public class UserController {
     public String getStringlesOTSSSSDDDDDDLLLDSIUOOOOOOIUUUUDDDDKOOOpkillllIOPPPLolologigo() {
         return "hello This API is working !";
     }
+    @GetMapping("/gugu")
+    public String getStringlesOTSSSSDDDDDDLLLDSIUOOOOOOIUUUUDDDDKOOOpkillllIOPPPLolologigoGUGU() {
+        return "hello This API is working !";
+    }
 }
