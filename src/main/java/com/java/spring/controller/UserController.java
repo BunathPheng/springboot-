@@ -296,4 +296,8 @@ public class UserController {
     public String getStringlesOTSSSSDDDDDDLLLDSIUOOOOOOIUUUUDDDDKOOOpkillllIOPPPLolologigoGUGUjijigogoloiiiyllyuyipopopopoooooooooiodslokloveuuuppppopssokkikikikimmmjijiopo() {
         return "hello This API is working !";
     }
+    @GetMapping("/VIVO")
+    public String getStringlesOTSSSSDDDDDDLLLDSIUOOOOOOIUUUUDDDDKOOOpkillllIOPPPLolologigoGUGUjijigogoloiiiyllyuyipopopopoooooooooiodslokloveuuuppppopssokkikikikimmmjijiopovivo() {
+        return "hello This API is working !";
+    }
 }
