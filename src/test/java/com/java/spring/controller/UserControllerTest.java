@@ -21,7 +21,7 @@ class UserControllerTest {
     private UserService userService;
 
     @Test
-    void helloEndpointReturnsHiBro() throws Exception {
+    void helloEndpointReturnsGreeting() throws Exception {
         mockMvc.perform(get("/api/v1/users/hello"))
                 .andExpect(status().isOk())
                 .andExpect(content().string("hi bro"));
