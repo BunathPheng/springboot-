@@ -54,7 +54,7 @@ public class UserController {
     }
     @GetMapping("/hello")
     public String getStringd() {
-        return "hello This API is working !";
+        return "hi bro";
     }
     @GetMapping("/g")
     public String getStringl() {
